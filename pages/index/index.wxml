@@ -1,0 +1,33 @@
+<view class='container'>
+  <picker class='picker' mode='date' fields='month' bindchange='dateChange'>
+    <view class='picker-content'>
+      <image class='date-icon' src='../../assets/date_48.png'></image>
+      <view class='date-text'>{{currentDate}}</view>
+    </view>
+  </picker>
+  <view class='title-wrapper'>
+    <text class='title'>{{username + " 老师 " + currentDate + " 月工资表"}}</text>
+    <text class='yuan'>单位：元</text>
+  </view>
+  <view class='table-wrapper'>
+    <view class='nodata' wx:if='{{list.length === 0}}'>本月暂无工资数据</view>
+    <view class='row1' wx:if='{{list.length > 0}}' wx:for='{{list}}' wx:key='{{item.id}}'>
+      <text class='text'>{{item.name}}</text>
+      <view class='column2-wrapper'>
+        <view class='column-value' wx:if='{{item.value}}'>{{item.value}}</view>
+        <view class='column2' wx:if='{{item.children.length > 0}}' wx:for='{{item.children}}' wx:for-item='item2' wx:key='{{item2.id}}'>
+          <text class='text'>{{item2.name}}</text>
+          <view class='column3-wrapper'>
+            <view class='column-value' wx:if='{{item2.value}}'>{{item2.value}}</view>
+            <view class='column3' wx:if='{{item2.children.length > 0}}' wx:for='{{item2.children}}' wx:for-item='item3' wx:key='{{item3.id}}'>
+              <text class='text'>{{item3.name}}</text>
+              <view class='column4-wrapper'>
+                <view class='column-value' wx:if='{{item3.value}}'>{{item3.value}}</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

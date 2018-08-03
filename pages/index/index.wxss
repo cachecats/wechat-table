@@ -1,0 +1,140 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background: white;
+}
+
+.picker {
+  width: 100%;
+}
+
+.date-text {
+  font-size: 32rpx;
+  padding: 20rpx 10rpx;
+  text-align: center;
+}
+
+.title-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+
+.title {
+  flex: 1;
+  font-size: 34rpx;
+  text-align: center;
+  font-weight: 700;
+  color: #09bb07;
+}
+
+.yuan {
+  font-size: 24rpx;
+  color: #09bb07;
+}
+
+.table-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-top: 1rpx solid #DCDFE6;
+}
+
+.row1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 32rpx;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #DCDFE6;
+  
+}
+
+.text {
+  flex: 1;
+  padding: 10rpx;
+  line-height: 60rpx;
+  height: 60rpx;
+}
+
+.column2-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  justify-content: center;
+  border-left: 1rpx solid #DCDFE6;
+}
+
+.column2 {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border-bottom: 1rpx solid #DCDFE6;
+}
+
+.column2:last-child{
+  border-bottom: none;
+}
+
+.column3-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  justify-content: center;
+  border-left: 1rpx solid #DCDFE6;
+}
+
+.column3 {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border-bottom: 1rpx solid #DCDFE6;
+}
+
+.column3:last-child{
+  border-bottom: none;
+}
+
+.column-value{
+  display: flex;
+  align-self: flex-end;
+  margin-right: 10rpx;
+  padding: 10rpx;
+  line-height: 60rpx;
+  height: 60rpx;
+}
+
+.column4-wrapper{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  border-left: 1rpx solid #DCDFE6;
+}
+
+.picker-content{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1rpx solid rgba(7, 17, 27, 0.1);
+}
+
+.date-icon{
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.nodata{
+  width: 100%;
+  text-align: center;
+  font-size: 32rpx;
+  color: #666;
+  padding: 20rpx;
+}
